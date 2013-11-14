@@ -8,12 +8,12 @@ body {
 	background: rgba(249, 177, 152, 1);
 }
 
-h1,h2,h3,h4,h5,h6 {font-family: 'Libre Baskerville', serif;}
+h1,h2 {font-family: 'Libre Baskerville', serif;}
 
 .main {
 	position: relative;
+	min-width: 320px;
 }
-
 /*********************************************************************/
 /* .mainHeader */
 /*********************************************************************/
@@ -22,25 +22,26 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Libre Baskerville', serif;}
 	top: 0;
 	right: 0;
 	left: 0;
-	padding: 15px 20px;
+	padding: 15px 10px;
 	background-color: rgba(255,255,255, 1);
 	background-image: url('../img/imgHeaderBackground.png');
 	box-shadow: 0px 1px 2px rgba(0,0,0, 0.15);
+	min-width: 320px;
+	z-index: 10;
 }
 
 .mainHeader h1 {
 	position: relative;
 	overflow: hidden;
 	margin: 0 auto 10px auto;
-	width: 150px;
-	height: 50px;
+	width: 170px;
+	height: 55px;
 }
 
 .mainHeader h1 span {
 	position: absolute;
 	top: -30px;
 	opacity: 0;
-	
 }
 
 .mainHeader h1 img {
@@ -54,12 +55,14 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Libre Baskerville', serif;}
 .mainHeader nav a {
 	display: inline-block;
 	color: rgba(222, 147, 121, 1);
-	padding: 10px;
+	padding: 7px;
 	border-radius: 1px;
 	background: transparent;
 	text-transform:uppercase; 
 	font-size: 1.4em;
-	margin-right: 10px;
+	margin-right: 5px;
+	transition: color 0.1s ease-in-out, background 0.3s ease-in-out;
+
 }
 
 .mainHeader nag a:last-child{margin-right: 0;}
@@ -75,8 +78,10 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Libre Baskerville', serif;}
 /*********************************************************************/
 .content{
 	position: relative;
-	top: 125px;
-	padding:20px; 
+	top: 130px;
+	padding:20px;
+	max-width: 520px;
+	margin: 0 auto; 
 }
 
 .content h2 {
@@ -87,16 +92,18 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Libre Baskerville', serif;}
 	margin-bottom: 10px;
 }
 
-.content quote {
-	font-size: 1.7em;
+.content h3 {
+	font-size: 1.8em;
 	text-align: center;
 	margin-bottom: 15px;
 	display: block;
+	line-height: 1.2em;
 }
 
 .content p {
 	font-size: 1.5em;
 	margin-bottom: 10px;
+	line-height: 1.2em;
 }
 
 .content p:last-child {margin-bottom: 0;}
@@ -113,11 +120,13 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Libre Baskerville', serif;}
 	margin-bottom: 10px;
 	position: relative;
 	padding-left: 10px;
+	line-height: 1.2em;
 }
 
 .contacts i {
 	position: absolute;
 	left: -14px;
+	line-height: 1.2em;
 }
 
 .contacts span {
@@ -131,3 +140,60 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Libre Baskerville', serif;}
 	margin-bottom: 0;
 }	
 
+/********************************************/
+/* Everybody has Media Queries :) */
+/********************************************/
+
+/********************************************/
+/* .768px (iPad and more) */
+/********************************************/
+@media (min-width: 768px) {
+/* Header */
+.mainHeader nav a {
+	padding: 10px;
+	font-size: 1.5em;
+	margin-right: 10px;
+}
+
+/* Content */
+	.content {
+		top: 150px;
+		max-width: 720px;
+	}
+	
+	.content h2 {
+		font-size: 4.0em;
+		}
+	
+	.content h3 {
+		font-size: 2.4em;
+		font-style: italic;
+		line-height: 1.4em;
+		margin-bottom: 30px;
+	}	
+		
+	.content p {
+		font-size: 1.8em;	
+		line-height: 1.4em;
+		margin-bottom: 15px;
+		text-align: justify;
+		}
+
+
+/* Contacts */
+	.contacts {margin-left: 20px;}
+	
+	.contacts li {
+		font-size: 1.8em;
+		margin-bottom: 15px;
+		padding-left: 10px;
+		line-height: 1.4em;
+		transition: text 1s;
+	}
+	
+	.contacts i {
+		position: absolute;
+		left: -18px;
+		line-height: 1.4em;
+	}
+}	
