@@ -24,7 +24,7 @@ h1,h2 {font-family: 'Libre Baskerville', serif;}
 	left: 0;
 	padding: 15px 10px;
 	background-color: rgba(255,255,255, 1);
-	background-image: url('../img/imgHeaderBackground.png');
+	background-image: url('http://aconchegolar.com.br/img/imgHeaderBackground.png');
 	box-shadow: 0px 1px 2px rgba(0,0,0, 0.15);
 	min-width: 320px;
 	z-index: 10;
@@ -216,10 +216,10 @@ h1,h2 {font-family: 'Libre Baskerville', serif;}
 	}
 
 /* Imgs */
-	.banner.index {background:url("../img/imgIndex.jpg") no-repeat scroll center -420px;}	
-	.banner.contact {background:url("../img/imgContact.jpg") no-repeat scroll center -305px;}
-	.banner.space {background:url("../img/imgSpace.jpg") no-repeat scroll center -700px;}	
-	.banner.services {background:url("../img/imgServices.jpg") no-repeat scroll center -230px;}	
+	.banner.index {background:url('http://aconchegolar.com.br/img/imgIndex.jpg') no-repeat scroll center -420px;}	
+	.banner.contact {background:url('http://aconchegolar.com.br/img/imgContact.jpg') no-repeat scroll center -305px;}
+	.banner.space {background:url('http://aconchegolar.com.br/img/imgSpace.jpg') no-repeat scroll center -700px;}	
+	.banner.services {background:url('http://aconchegolar.com.br/img/imgServices.jpg') no-repeat scroll center -230px;}	
 	
 }	
 
