@@ -79,10 +79,19 @@ h1,h2 {font-family: 'Libre Baskerville', serif;}
 .content{
 	position: relative;
 	top: 130px;
-	padding:20px;
+}
+
+.wrapper { 
 	max-width: 520px;
 	margin: 0 auto; 
+	padding:20px;
+
 }
+
+.banner {display: none;}
+
+
+.banner span {visibility: hidden;}
 
 .content h2 {
 	font-size: 2.6em;
@@ -157,8 +166,11 @@ h1,h2 {font-family: 'Libre Baskerville', serif;}
 
 /* Content */
 	.content {
-		top: 150px;
-		max-width: 720px;
+		padding:0;
+	}
+	
+	.wrapper {
+	max-width: 720px;
 	}
 	
 	.content h2 {
@@ -178,7 +190,13 @@ h1,h2 {font-family: 'Libre Baskerville', serif;}
 		margin-bottom: 15px;
 		text-align: justify;
 		}
-
+	
+	.banner { 
+		display: block;
+		height: 400px;
+		margin-bottom: 20px;
+		border-bottom: solid 2px rgba(0,0,0,0.02);
+	}
 
 /* Contacts */
 	.contacts {margin-left: 20px;}
@@ -196,4 +214,12 @@ h1,h2 {font-family: 'Libre Baskerville', serif;}
 		left: -18px;
 		line-height: 1.4em;
 	}
+
+/* Imgs */
+	.banner.index {background:url("../img/imgIndex.jpg") no-repeat scroll center -420px;}	
+	.banner.contact {background:url("../img/imgContact.jpg") no-repeat scroll center -305px;}
+	.banner.space {background:url("../img/imgSpace.jpg") no-repeat scroll center -700px;}	
+	.banner.services {background:url("../img/imgServices.jpg") no-repeat scroll center -230px;}	
+	
 }	
+
